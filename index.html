@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Производственный календарь России</title>
+<body>
+<h1>Производственный календарь России</h1>
+<p>Праздничные периоды и сокращённые рабочие дни. События на весь день, без напоминаний.</p>
+<p><a id="subscribe" href="calendar.ics">Подписаться в Apple Calendar</a> · <a href="calendar.ics">Скачать ICS</a></p>
+<p>Для подписки вручную скопируйте адрес:</p>
+<p><code id="address"></code></p>
+<script>
+const url = new URL('calendar.ics', location.href);
+document.getElementById('address').textContent = url.href;
+url.protocol = 'webcal:';
+document.getElementById('subscribe').href = url.href;
+</script>
+</body>
+</html>
