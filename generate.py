@@ -28,7 +28,7 @@ def main():
             event = dict(item)
             event['start'] = date.fromisoformat(event['start'])
             event['end'] = date.fromisoformat(event['end'])
-            if event['end'] < event['start'] or event['kind'] not in ('holiday', 'short'):
+            if event['end'] < event['start'] or event['kind'] not in ('holiday', 'short', 'transfer'):
                 raise ValueError(f'Invalid event in {path}: {item}')
             event['sources'] = {dataset['source']}
             event['notes'] = {event.get('description', '')} - {''}
@@ -48,7 +48,7 @@ def main():
     lines = ['BEGIN:VCALENDAR', 'VERSION:2.0',
              'PRODID:-//RU Production Calendar//RU', 'CALSCALE:GREGORIAN',
              'X-WR-CALNAME:Производственный календарь России',
-             'X-WR-CALDESC:Нерабочие праздничные дни и сокращённые рабочие дни. Пятидневка.',
+             'X-WR-CALDESC:Нерабочие праздничные дни, перенесённые выходные и сокращённые рабочие дни. Пятидневка.',
              'REFRESH-INTERVAL;VALUE=DURATION:P1D', 'X-PUBLISHED-TTL:P1D']
     for event in sorted(merged, key=lambda x: x['start']):
         start = event['start'].strftime('%Y%m%d')
