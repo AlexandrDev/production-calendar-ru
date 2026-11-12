@@ -57,7 +57,6 @@ def main():
         if event['kind'] == 'holiday':
             description.append('Нерабочие праздничные дни по статье 112 Трудового кодекса Российской Федерации.')
         description.extend(sorted(event['notes']))
-        description.extend('Источник: ' + s for s in sorted(event['sources']))
         lines.extend(['BEGIN:VEVENT',
                       f"UID:ru-production-{event['key']}-{start}@calendar.invalid",
                       f'DTSTAMP:{stamp}', f'LAST-MODIFIED:{stamp}',

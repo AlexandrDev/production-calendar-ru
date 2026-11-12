@@ -11,520 +11,481 @@ REFRESH-INTERVAL;VALUE=DURATION:P1D
 X-PUBLISHED-TTL:P1D
 BEGIN:VEVENT
 UID:ru-production-new-year-20260101@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260101
 DTEND;VALUE=DATE:20260107
 SUMMARY:Новогодние каникулы
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-christmas-20260107@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260107
 DTEND;VALUE=DATE:20260108
 SUMMARY:Рождество Христово
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-new-year-20260108@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260108
 DTEND;VALUE=DATE:20260109
 SUMMARY:Новогодние каникулы
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20260109@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260109
 DTEND;VALUE=DATE:20260110
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 03.01.2026.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
+DESCRIPTION:Выходной перенесён с 03.01.2026.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-defender-20260223@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260223
 DTEND;VALUE=DATE:20260224
 SUMMARY:День защитника Отечества
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-womens-day-20260308@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260308
 DTEND;VALUE=DATE:20260309
 SUMMARY:Международный женский день
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20260309@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260309
 DTEND;VALUE=DATE:20260310
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 08.03.2026.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
+DESCRIPTION:Выходной перенесён с 08.03.2026.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-short-20260430@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260501
 SUMMARY:Сокращённый рабочий день
 DESCRIPTION:Рабочий день сокращён на один час. 
  Предстоящий праздник: Праздник Весны и Т
- руда.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ руда.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-spring-labour-20260501@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260501
 DTEND;VALUE=DATE:20260502
 SUMMARY:Праздник Весны и Труда
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-short-20260508@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260508
 DTEND;VALUE=DATE:20260509
 SUMMARY:Сокращённый рабочий день
 DESCRIPTION:Рабочий день сокращён на один час. 
- Предстоящий праздник: День Победы.\nИсто
- чник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026
- /
+ Предстоящий праздник: День Победы.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-victory-20260509@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260509
 DTEND;VALUE=DATE:20260510
 SUMMARY:День Победы
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20260511@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260511
 DTEND;VALUE=DATE:20260512
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 09.05.2026.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
+DESCRIPTION:Выходной перенесён с 09.05.2026.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-short-20260611@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260611
 DTEND;VALUE=DATE:20260612
 SUMMARY:Сокращённый рабочий день
 DESCRIPTION:Рабочий день сокращён на один час. 
- Предстоящий праздник: День России.\nИсто
- чник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026
- /
+ Предстоящий праздник: День России.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-russia-20260612@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20260612
 DTEND;VALUE=DATE:20260613
 SUMMARY:День России
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-short-20261103@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20261103
 DTEND;VALUE=DATE:20261104
 SUMMARY:Сокращённый рабочий день
 DESCRIPTION:Рабочий день сокращён на один час. 
  Предстоящий праздник: День народного ед
- инства.\nИсточник: https://www.consultant.ru/law/ref/calenda
- r/proizvodstvennye/2026/
+ инства.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-unity-20261104@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:День народного единства
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2026/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20261231@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20261231
 DTEND;VALUE=DATE:20270101
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 04.01.2026.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
+DESCRIPTION:Выходной перенесён с 04.01.2026.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2026/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-new-year-20270101@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270101
 DTEND;VALUE=DATE:20270107
 SUMMARY:Новогодние каникулы
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-christmas-20270107@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270107
 DTEND;VALUE=DATE:20270108
 SUMMARY:Рождество Христово
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-new-year-20270108@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270108
 DTEND;VALUE=DATE:20270109
 SUMMARY:Новогодние каникулы
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-short-20270220@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270220
 DTEND;VALUE=DATE:20270221
 SUMMARY:Сокращённый рабочий день
 DESCRIPTION:Рабочий день сокращён на один час. 
  Предстоящий праздник: День защитника От
- ечества.\nИсточник: https://www.consultant.ru/law/ref/calen
- dar/proizvodstvennye/2027/
+ ечества.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20270222@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270222
 DTEND;VALUE=DATE:20270223
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 20.02.2027.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
+DESCRIPTION:Выходной перенесён с 20.02.2027.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-defender-20270223@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270223
 DTEND;VALUE=DATE:20270224
 SUMMARY:День защитника Отечества
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-womens-day-20270308@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270308
 DTEND;VALUE=DATE:20270309
 SUMMARY:Международный женский день
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-short-20270430@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270430
 DTEND;VALUE=DATE:20270501
 SUMMARY:Сокращённый рабочий день
 DESCRIPTION:Рабочий день сокращён на один час. 
  Предстоящий праздник: Праздник Весны и Т
- руда.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ руда.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-spring-labour-20270501@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270501
 DTEND;VALUE=DATE:20270502
 SUMMARY:Праздник Весны и Труда
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20270503@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270503
 DTEND;VALUE=DATE:20270504
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 01.05.2027.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
+DESCRIPTION:Выходной перенесён с 01.05.2027.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-victory-20270509@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270509
 DTEND;VALUE=DATE:20270510
 SUMMARY:День Победы
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20270510@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270510
 DTEND;VALUE=DATE:20270511
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 09.05.2027.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
+DESCRIPTION:Выходной перенесён с 09.05.2027.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-short-20270611@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270611
 DTEND;VALUE=DATE:20270612
 SUMMARY:Сокращённый рабочий день
 DESCRIPTION:Рабочий день сокращён на один час. 
- Предстоящий праздник: День России.\nИсто
- чник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027
- /
+ Предстоящий праздник: День России.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-russia-20270612@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270612
 DTEND;VALUE=DATE:20270613
 SUMMARY:День России
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20270614@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20270614
 DTEND;VALUE=DATE:20270615
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 12.06.2027.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
+DESCRIPTION:Выходной перенесён с 12.06.2027.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-short-20271103@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20271103
 DTEND;VALUE=DATE:20271104
 SUMMARY:Сокращённый рабочий день
 DESCRIPTION:Рабочий день сокращён на один час. 
  Предстоящий праздник: День народного ед
- инства.\nИсточник: https://www.consultant.ru/law/ref/calenda
- r/proizvodstvennye/2027/
+ инства.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-unity-20271104@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20271104
 DTEND;VALUE=DATE:20271105
 SUMMARY:День народного единства
 DESCRIPTION:Нерабочие праздничные дни по стат
  ье 112 Трудового кодекса Российской Федер
- ации.\nИсточник: https://www.consultant.ru/law/ref/calendar/pr
- oizvodstvennye/2027/
+ ации.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20271105@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20271105
 DTEND;VALUE=DATE:20271106
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 02.01.2027.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
+DESCRIPTION:Выходной перенесён с 02.01.2027.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
 END:VEVENT
 BEGIN:VEVENT
 UID:ru-production-transfer-20271231@calendar.invalid
-DTSTAMP:20261112T084846Z
-LAST-MODIFIED:20261112T084846Z
+DTSTAMP:20261112T090227Z
+LAST-MODIFIED:20261112T090227Z
 DTSTART;VALUE=DATE:20271231
 DTEND;VALUE=DATE:20280101
 SUMMARY:Перенесённый выходной
-DESCRIPTION:Выходной перенесён с 03.01.2027.\nИсточ
- ник: https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
+DESCRIPTION:Выходной перенесён с 03.01.2027.
 URL:https://www.consultant.ru/law/ref/calendar/proizvodstvennye/2027/
 TRANSP:TRANSPARENT
 STATUS:CONFIRMED
