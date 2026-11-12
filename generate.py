@@ -48,14 +48,14 @@ def main():
     lines = ['BEGIN:VCALENDAR', 'VERSION:2.0',
              'PRODID:-//RU Production Calendar//RU', 'CALSCALE:GREGORIAN',
              'X-WR-CALNAME:Производственный календарь России',
-             'X-WR-CALDESC:Праздничные периоды и сокращённые рабочие дни. Пятидневка.',
+             'X-WR-CALDESC:Нерабочие праздничные дни и сокращённые рабочие дни. Пятидневка.',
              'REFRESH-INTERVAL;VALUE=DURATION:P1D', 'X-PUBLISHED-TTL:P1D']
     for event in sorted(merged, key=lambda x: x['start']):
         start = event['start'].strftime('%Y%m%d')
         end = (event['end'] + timedelta(days=1)).strftime('%Y%m%d')
         description = []
         if event['kind'] == 'holiday':
-            description.append('Период праздничного отдыха при пятидневной рабочей неделе, включая примыкающие и перенесённые выходные.')
+            description.append('Нерабочие праздничные дни по статье 112 Трудового кодекса Российской Федерации.')
         description.extend(sorted(event['notes']))
         description.extend('Источник: ' + s for s in sorted(event['sources']))
         lines.extend(['BEGIN:VEVENT',
