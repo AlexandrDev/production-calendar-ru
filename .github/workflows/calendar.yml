@@ -1,0 +1,112 @@
+name: Calendar
+
+on:
+  schedule:
+    # 1 December, 09:17 Moscow (06:17 UTC): import next year.
+    - cron: '17 6 1 12 *'
+    # Only maintain repository activity; never fetch the calendar here.
+    - cron: '23 6 15 * *'
+  workflow_dispatch:
+    inputs:
+      year:
+        description: 'Год календаря (пусто — следующий год по Москве)'
+        required: false
+        type: string
+  push:
+    branches: [main]
+    paths:
+      - calendar.ics
+      - index.html
+      - .github/workflows/calendar.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: calendar-main
+  cancel-in-progress: false
+
+jobs:
+  keepalive:
+    if: github.event_name == 'schedule' && github.event.schedule == '23 6 15 * *'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - name: Keep annual schedule active after 40 days without commits
+        shell: bash
+        run: |
+          last_commit=$(git log -1 --format=%ct)
+          if (( $(date +%s) - last_commit >= 40 * 86400 )); then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit --allow-empty -m 'chore: keep annual calendar schedule active'
+            git push origin HEAD:main
+          fi
+
+  build:
+    if: github.ref == 'refs/heads/main' && (github.event_name != 'schedule' || github.event.schedule == '17 6 1 12 *')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Check parser and ICS generator
+        run: python3 -m unittest discover -s tests -v
+      - name: Import approved calendar and regenerate ICS if changed
+        if: github.event_name != 'push'
+        env:
+          CALENDAR_YEAR: ${{ inputs.year }}
+        shell: bash
+        run: |
+          args=()
+          if [[ -n "$CALENDAR_YEAR" ]]; then
+            args+=(--year "$CALENDAR_YEAR")
+          fi
+          python3 update_calendar.py "${args[@]}"
+      - name: Commit calendar changes
+        if: github.event_name != 'push'
+        shell: bash
+        run: |
+          git add data/ calendar.ics README.md index.html
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'chore: update production calendar from ConsultantPlus'
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - name: Prepare public files
+        run: |
+          mkdir -p "$RUNNER_TEMP/calendar-site"
+          cp index.html calendar.ics "$RUNNER_TEMP/calendar-site/"
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: ${{ runner.temp }}/calendar-site
+          retention-days: 1
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish calendar
+        id: deployment
+        uses: actions/deploy-pages@v4
