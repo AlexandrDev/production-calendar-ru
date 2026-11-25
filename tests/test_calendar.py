@@ -56,7 +56,10 @@ class CalendarTests(unittest.TestCase):
         self.assertEqual(events['2027-01-07']['key'], 'christmas')
         self.assertEqual(events['2027-01-08']['key'], 'new-year')
         self.assertEqual(events['2027-02-20']['kind'], 'short')
-        self.assertIn('День защитника Отечества', events['2027-02-20']['description'])
+        self.assertEqual(
+            events['2027-02-20']['description'],
+            'Рабочий день сокращён на один час. Предстоящий праздник: День защитника Отечества, 23.02.2027.',
+        )
         self.assertEqual(events['2027-02-22']['description'], 'Выходной перенесён с 20.02.2027.')
         self.assertEqual(events['2027-05-03']['description'], 'Выходной перенесён с 01.05.2027.')
         self.assertEqual(events['2027-12-31']['description'], 'Выходной перенесён с 03.01.2027.')
@@ -139,13 +142,23 @@ class CalendarTests(unittest.TestCase):
             line.decode('utf-8')
         unfolded = raw.replace(b'\r\n ', b'').decode()
         self.assertNotIn('VALARM', unfolded)
+        datasets = [json.loads(path.read_text()) for path in (ROOT / 'data').glob('*.json')]
+        expected_notes = {
+            'ru-production-' + event['key'] + '-' + event['start'].replace('-', '') + '@calendar.invalid':
+                (event.get('description', ''), dataset['source'])
+            for dataset in datasets for event in dataset['events']
+        }
         uids = []
         for block in unfolded.split('BEGIN:VEVENT\r\n')[1:]:
             fields = dict(line.split(':', 1) for line in block.split('END:VEVENT')[0].splitlines() if ':' in line)
             uids.append(fields['UID'])
             self.assertLess(fields['DTSTART;VALUE=DATE'], fields['DTEND;VALUE=DATE'])
             self.assertEqual(fields['TRANSP'], 'TRANSPARENT')
-            self.assertTrue(fields['URL'].startswith('https://www.consultant.ru/'))
+            self.assertNotIn('URL', fields)
+            note, source = expected_notes[fields['UID']]
+            expected = generate.escape(f'{note}\n\n{source}' if note else source)
+            self.assertEqual(fields['DESCRIPTION'], expected)
+            self.assertEqual(block.count(source), 1)
         self.assertEqual(len(uids), len(set(uids)))
         existing = (ROOT / 'calendar.ics').read_text()
         self.assertEqual(set(uids), {line[4:] for line in existing.splitlines() if line.startswith('UID:')})

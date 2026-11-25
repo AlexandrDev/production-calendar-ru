@@ -200,8 +200,10 @@ def parse_calendar(html, year):
         effective = next((target for target, origin in transfers.items() if origin == d), d)
         upcoming = [h for h in sorted(holidays) if 0 < (h - effective).days <= 7]
         require(upcoming, f'Не определён праздник для сокращённого дня {d}')
-        title = holidays[upcoming[0]]['title']
-        events.append(event(d, 'short', 'Сокращённый рабочий день', 'short', f'Рабочий день сокращён на один час. Предстоящий праздник: {title}.'))
+        holiday = upcoming[0]
+        title = holidays[holiday]['title']
+        description = f'Рабочий день сокращён на один час. Предстоящий праздник: {title}, {holiday:%d.%m.%Y}.'
+        events.append(event(d, 'short', 'Сокращённый рабочий день', 'short', description))
     # Store adjacent dates of the same holiday as intervals; keep January 7 separate.
     merged = []
     for item in sorted(events, key=lambda e: e['start']):
